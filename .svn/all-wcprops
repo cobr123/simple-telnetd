@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 22
+/svn/!svn/ver/11/trunk
+END
+tools.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/10/trunk/tools.cpp
+END
+settings.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/8/trunk/settings.cpp
+END
+procquee.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/8/trunk/procquee.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/11/trunk/main.cpp
+END
+linapi10.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/2/trunk/linapi10.pdf
+END
+tools.h
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/10/trunk/tools.h
+END
+settings.h
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/10/trunk/settings.h
+END
+procquee.h
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/8/trunk/procquee.h
+END
+socket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/9/trunk/socket.cpp
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/9/trunk/makefile
+END
+telnetd.1
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/2/trunk/telnetd.1
+END
+socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/9/trunk/socket.h
+END
