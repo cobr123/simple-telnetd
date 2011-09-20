@@ -22,7 +22,7 @@
 #include "settings.h"
 #include "procquee.h"
 
-#define MYPORT 3334
+#define MYPORT 3337
 #define CONFIG_FILE "/etc/simple-telnetd.conf"
 
 
@@ -49,13 +49,13 @@ void base_handler_sigchld(int sig)
 
 void handler_sighup(int sig)
 {
-	fprintf(stderr, "SIGHUP signal catched\n");
-	reconf = true;
+        fprintf(stderr, "SIGHUP signal catched\n");
+        reconf = true;
 }
 
 void base_handler_sighup(int sig)
 {
-	fprintf(stderr, "SIGHUP signal catched in base\n");
+        fprintf(stderr, "SIGHUP signal catched in base\n");
 	proc_queue.broadcastSignal(SIGHUP);
 }
 
@@ -113,17 +113,7 @@ int main (int argc, char * const argv[])
 			signal(SIGHUP, handler_sighup);
 			
 			while(1)
-			{
-				if (reconf) {
-					if (set.getFromFile(CONFIG_FILE) < 0) {
-						perror("getFromFile()");
-					}
-					else {
-						fprintf(stderr, "Reconfiguration\n");
-					}
-
-					reconf = false;
-				}
+                        {
 				session.write(">");
 				
 				std::string line = session.readLine();
@@ -133,6 +123,16 @@ int main (int argc, char * const argv[])
 				}
 				std::string cmd = extract_cmd(croprn(line));
 
+                                if (reconf) {
+                                        if (set.getFromFile(CONFIG_FILE) < 0) {
+                                                perror("getFromFile()");
+                                        }
+                                        else {
+                                                fprintf(stderr, "Reconfiguration\n");
+                                        }
+
+                                        reconf = false;
+                                }
 				if (!set.inCmdList(cmd)) {
 					session.write("Command '");
 					session.write(croprn(line));
